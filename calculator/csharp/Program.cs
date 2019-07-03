@@ -6,24 +6,28 @@ namespace csharp
 {
 
     class Calculator {
-	public int RaiseNumberSquared(int number) {
+	public int RaiseNumberSquared(int number)
+	{
 	    return number * number;
 	}
 
-	public int SquareSumOfTheNumbersUpToTen() {
+	public int SquareSumOfTheNumbersUpToTen()
+	{
 	    int sum = 0;
 
-	    for(int number = 1; number <= 10; number++) {
+	    for(int number = 1; number <= 10; number++)
+	    {
 	        sum += RaiseNumberSquared(number);
 	    }
 
 	    return sum;
 	}
 
-	public int SquareSumOfTheNumbersUpToTenWithEnumerable() {
+	public int SquareSumOfTheNumbersUpToTenWithEnumerable()
+	{
 	    return Enumerable.Range(1, 10)
-		              .Select(RaiseNumberSquared)
-			      .Sum();
+		             .Select(RaiseNumberSquared)
+			     .Sum();
 	}
     }
 
