@@ -17,13 +17,13 @@ namespace csharp
 	class PeriodOfTime
     	{
     		public DateTime InitialDate { get; set; }
-			public DateTime FinalDate { get; set; }
+		public DateTime FinalDate { get; set; }
 
-			public bool CheckIfDateIsBetweenThePeriod(DateTime date)
-	{
-	    	return date.CompareTo(InitialDate) >= 0 && date.CompareTo(FinalDate) <= 0;
+		public bool CheckIfDateIsBetweenThePeriod(DateTime date)
+		{
+	    		return date.CompareTo(InitialDate) >= 0 && date.CompareTo(FinalDate) <= 0;
 		}
-    }
+    	}
 
     class Program
     {
@@ -37,14 +37,14 @@ namespace csharp
 	    	DateTime[] dates = new DateTime[]
 	    	{
 	    		DateTime.Parse("18/08/2016"),
-				DateTime.Parse("22/08/2016"),
-				DateTime.Parse("01/09/2016")
+			DateTime.Parse("22/08/2016"),
+			DateTime.Parse("01/09/2016")
 	    	};
 
 	    	foreach(DateTime date in dates)
 	    	{
 	    		bool result = period.CheckIfDateIsBetweenThePeriod(date);
-				Console.WriteLine(result);
+			Console.WriteLine(result);
 	    	}
 
 	    	period.FinalDate = DateTime.MaxValue;
@@ -53,7 +53,7 @@ namespace csharp
 	    	foreach(DateTime date in dates)
 	    	{
 	    		bool result = period.CheckIfDateIsBetweenThePeriod(date);
-				Console.WriteLine(result);
+			Console.WriteLine(result);
 	    	}
 
 	    	Console.ReadKey();
