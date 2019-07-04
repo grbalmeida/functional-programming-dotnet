@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="WriteFunctions.fs" />
     <Compile Include="NestedFunctions.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
