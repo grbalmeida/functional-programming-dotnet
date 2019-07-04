@@ -7,7 +7,9 @@
 
   <ItemGroup>
     <Compile Include="WriteFunctions.fs" />
+    <Compile Include="NumberWritingFunctions.fs" />
     <Compile Include="NestedFunctions.fs" />
+    <Compile Include="HigherOrderFunctions.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 

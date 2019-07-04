@@ -6,7 +6,7 @@ namespace csharp
     {
         public static void Write(string name)
         {
-            Console.WriteLine(string.Concat("Your name is", name));
+            Console.WriteLine(string.Concat("Your name is: ", name));
         }
     }
 }
