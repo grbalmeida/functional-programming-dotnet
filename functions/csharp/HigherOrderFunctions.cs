@@ -21,6 +21,18 @@ namespace csharp
             PerformActionOnElements(numbers,
                 number => Console.WriteLine(number * 2));
         }
+
+        public static Action<int> MultiplyAndPrintNumbers(int multiplier)
+        {
+            return (number) => Console.WriteLine(number * multiplier);
+        }
+
+        public static void PrintNumbers(List<int> numbers, int multiplier)
+        {
+            Action<int> multiply = MultiplyAndPrintNumbers(multiplier);
+            PerformActionOnElements(numbers,
+                number => multiply(number));
+        }
     }
 
     static class CheckerEvenNumber

@@ -40,6 +40,14 @@ namespace csharp
 
             HigherOrderFunctions.PrintNames(names);
             HigherOrderFunctions.DoublePrintingNumbers(myNumbers);
+
+            Action<int> multiplyBy5AndThenPrint = HigherOrderFunctions.MultiplyAndPrintNumbers(5);
+            Action<int> multiplyBy3AndThenPrint = HigherOrderFunctions.MultiplyAndPrintNumbers(3);
+
+            int numberToBeMultiplied = 10;
+
+            multiplyBy5AndThenPrint(numberToBeMultiplied);
+            multiplyBy3AndThenPrint(numberToBeMultiplied);
         }
     }
 }
