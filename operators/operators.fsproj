@@ -9,6 +9,7 @@
     <Compile Include="Sum.fs" />
     <Compile Include="Subtraction.fs" />
     <Compile Include="Multiplication.fs" />
+    <Compile Include="PipelineOperator.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 

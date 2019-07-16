@@ -1,6 +1,7 @@
 ﻿open Sum
 open Subtraction
 open Multiplication
+open PipelineOperator
 
 [<EntryPoint>]
 let main argv =
@@ -15,4 +16,22 @@ let main argv =
 
     printfn "%i" (multiplyBy10 2)
     printfn "%i" (multiplyBy4 8)
+
+    printfn "%A" (doubleValuesFromAList())
+    printfn "%A" (doubleValuesFromListWithOperator())
+
+    printfn "%i" (variousOperations 2 3)
+    printfn "%i" (variousOperations 3 7)
+    printfn "%i" (variousOperations 10 20)
+
+    printfn "%i" (reverseExample 2 3)
+
+    printfn "%b" (oddNumberReverseOperator 10)
+    printfn "%b" (oddNumberReverseOperator 5)
+
+    printfn "%b" (oddNumber 10)
+    printfn "%b" (oddNumber 5)
+
+    printfn "%b" (oddNumberWithParentheses 10)
+    printfn "%b" (oddNumberWithParentheses 5)
     0
