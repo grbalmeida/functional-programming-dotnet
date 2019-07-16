@@ -2,6 +2,7 @@
 open Subtraction
 open Multiplication
 open PipelineOperator
+open ComposingFunctions
 
 [<EntryPoint>]
 let main argv =
@@ -34,4 +35,19 @@ let main argv =
 
     printfn "%b" (oddNumberWithParentheses 10)
     printfn "%b" (oddNumberWithParentheses 5)
+
+    printfn "%s" (verifyIfNumbersIsOdd 10)
+    printfn "%s" (verifyIfNumbersIsOdd 5)
+
+    printfn "%s" (verifyIfNumberIsOddUsingCompose 6)
+    printfn "%s" (verifyIfNumberIsOddUsingCompose 7)
+
+    printfn "%s" (sumWith3AndVerifyIfNumberIsOddUsingTheCompose 7)
+    printfn "%s" (sumWith3AndVerifyIfNumberIsOddUsingTheCompose 8)
+
+    printfn "%s" (verifyIfNumberIsOddUsingOperator 10)
+    printfn "%s" (verifyIfNumberIsOddUsingOperator 9)
+
+    printfn "%s" (sumWith3AndVerifyIfNumberIsOddUsingOperator 7)
+    printfn "%s" (sumWith3AndVerifyIfNumberIsOddUsingOperator 8)
     0

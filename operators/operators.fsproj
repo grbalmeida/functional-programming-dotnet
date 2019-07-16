@@ -10,6 +10,7 @@
     <Compile Include="Subtraction.fs" />
     <Compile Include="Multiplication.fs" />
     <Compile Include="PipelineOperator.fs" />
+    <Compile Include="ComposingFunctions.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
