@@ -1,4 +1,5 @@
 ﻿open ControlFlow
+open Math
 
 [<EntryPoint>]
 let main argv =
@@ -14,4 +15,12 @@ let main argv =
     printfn "%s" (verifyIfNumberIsEvenOrZeroWithPatternMatching 3)
     printfn "%s" (verifyIfNumberIsEvenOrZeroWithPatternMatching 0)
     printfn "%s" (verifyIfNumberIsEvenOrZeroWithPatternMatching 2)
+
+    printfn "%i" (factorial 2)
+    printfn "%i" (factorial 3)
+    printfn "%i" (factorial 4)
+
+    printfn "%i" (factorialWithPatternMatching 2)
+    printfn "%i" (factorialWithPatternMatching 3)
+    printfn "%i" (factorialWithPatternMatching 4)
     0
