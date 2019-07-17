@@ -1,5 +1,6 @@
 ﻿open ControlFlow
 open Math
+open Tuples
 
 [<EntryPoint>]
 let main argv =
@@ -23,4 +24,6 @@ let main argv =
     printfn "%i" (factorialWithPatternMatching 2)
     printfn "%i" (factorialWithPatternMatching 3)
     printfn "%i" (factorialWithPatternMatching 4)
+
+    printfn "%i" (sum 10 20)
     0

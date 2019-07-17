@@ -13,6 +13,8 @@ namespace csharp
             Console.WriteLine(Math.RecursiveFactorial(2));
             Console.WriteLine(Math.RecursiveFactorial(3));
             Console.WriteLine(Math.RecursiveFactorial(4));
+
+            Tuples.CreatingTuples();
         }
     }
 }
