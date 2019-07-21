@@ -2,6 +2,7 @@
 open Math
 open Tuples
 open Records
+open DiscriminatedUnions
 
 [<EntryPoint>]
 let main argv =
@@ -28,7 +29,10 @@ let main argv =
 
     printfn "%i" (sum 10 20)
 
-    printfn "%A" (intAndBool)
+    printfn "%A" intAndBool
     printfn "%i" integer
     printfn "%b" bool
+
+    printfn "%A" firstCustomer
+    printfn "%A" secondCustomer
     0
