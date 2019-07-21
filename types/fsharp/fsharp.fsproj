@@ -9,6 +9,7 @@
     <Compile Include="ControlFlow.fs" />
     <Compile Include="Math.fs" />
     <Compile Include="Tuples.fs" />
+    <Compile Include="Records.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
