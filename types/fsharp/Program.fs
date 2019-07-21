@@ -3,6 +3,7 @@ open Math
 open Tuples
 open Records
 open DiscriminatedUnions
+open UnitsOfMeasurement
 
 [<EntryPoint>]
 let main argv =
@@ -35,4 +36,12 @@ let main argv =
 
     printfn "%A" firstCustomer
     printfn "%A" secondCustomer
+
+    printfn "%A" firstWeight
+    printfn "%A" secondWeight
+    printfn "%A" thirdWeight
+    printfn "%i" carSpeed
+    printfn "%f" speedOfSound
+
+    printfn "%f" sumMeasure
     0
